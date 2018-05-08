@@ -14,7 +14,7 @@ Input file instructions:
 - Nodes that are self-joined will be ingored.
 
 ### Explanation
-The algorithm does a depth first search. When a new node is found, it is appended to the path and the path is displayed. This happens till a node that can't traverse further.
+The algorithm does a depth first search. When a new node is found, it is appended to the path and the path is displayed. This happens till a node that can't traverse further is reached.
 
 ### Output of given [input](input):
 ```
