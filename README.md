@@ -8,15 +8,16 @@ This program iterates a directional graph and displays all possible paths.
 
 #### Input file format
 Input file instructions:
-A node must have an edge otherwise it will be ignored. 
-The file must follow 'x,y' convention. 
-Invalid input such as 'a,b,c', 'a', 'a,a' etc will be ignored. 
-Nodes that are self-joined will be ingored.
+    - A node must have an edge otherwise it will be ignored. 
+    - The file must follow 'x,y' convention. 
+    - Invalid input such as 'a,b,c', 'a', 'a,a' etc will be ignored. 
+    - Nodes that are self-joined will be ingored.
 
 ### Explanation
 The algorithm does a depth first search. When a new node is found, it is appended to the path and the path is displayed. This happens till a node that can't traverse further.
 
 ### Output of given [input](input):
+```
 Node value: a
 Following are the links: 
 a -> b
@@ -81,3 +82,4 @@ z -> b -> d
 random_node -> b
 random_node -> b -> c
 random_node -> b -> d
+```
