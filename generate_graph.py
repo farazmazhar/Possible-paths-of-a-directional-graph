@@ -11,7 +11,7 @@ class Node:
         '''Initializing values'''
         self.value = value
         self.links = []
-    
+
     def get_value(self):
         '''Returns value of a node'''
         return self.value
@@ -64,7 +64,7 @@ class Graph:
             print("Node value: " + node.value)
             print("Following are the links: ")
 
-            if len(node.links) > 0:
+            if node.links:
                 for link in node.links:
                     print(node.value + " -> " + link.value)
             else:
