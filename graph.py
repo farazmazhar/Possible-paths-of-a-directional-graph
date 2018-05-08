@@ -39,8 +39,10 @@ class Graph:
             for link in links:
                 values = link.strip().split(',')
 
-                if len(values) > 2:
-                    print("Error: Invalid format.")
+                if len(values) == 1:
+                    continue
+                elif values[0] == values[1]:
+                    continue
 
                 for node_value in values:
                     if node_value not in nodes_values:
